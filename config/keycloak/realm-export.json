@@ -1,5 +1,5 @@
 {
-  "realm": "ecommerce",
+  "realm": "mall",
   "enabled": true,
   "clients": [
     {
@@ -129,13 +129,13 @@
       "name": "USER",
       "composite": false,
       "clientRole": false,
-      "containerId": "ecommerce"
+      "containerId": "mall"
     },
     {
       "name": "ADMIN",
       "composite": false,
       "clientRole": false,
-      "containerId": "ecommerce"
+      "containerId": "mall"
     }
   ],
   "users": [

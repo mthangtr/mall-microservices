@@ -38,7 +38,7 @@ The project includes a data collection and processing module that tracks user ev
 1. **Clone the repository**:
    ```
    git clone <repository-url>
-   cd ecommerce-microservices
+   cd mall-microservices
    ```
 
 2. **Build the project**:

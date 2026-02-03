@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ecommerce
+    url: jdbc:postgresql://localhost:5432/mall
     username: postgres
     password: your_password
     driver-class-name: org.postgresql.Driver
@@ -40,7 +40,7 @@ elasticsearch:
 
 notification:
   email:
-    from: no-reply@ecommerce.com
+    from: no-reply@mall.com
     subject: Order Confirmation
     smtp:
       host: smtp.example.com
