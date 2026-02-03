@@ -1,0 +1,38 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/productdb
+    username: your_username
+    password: your_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+elasticsearch:
+  rest:
+    uris: http://localhost:9200
+
+redis:
+  host: localhost
+  port: 6379
+
+kafka:
+  bootstrap-servers: localhost:9092
+
+feign:
+  hystrix:
+    enabled: true
+
+circuitbreaker:
+  enabled: true
+
+saga:
+  enabled: true
+
+logging:
+  level:
+    com.example.productservice: DEBUG

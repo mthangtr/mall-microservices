@@ -1,0 +1,34 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/analytics_db
+    username: your_username
+    password: your_password
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: localhost:9092
+  redis:
+    host: localhost
+    port: 6379
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+
+logging:
+  level:
+    com.example.analyticsservice: DEBUG
+
+event:
+  processing:
+    enabled: true
+    topic: analytics-events
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# Additional configurations can be added as needed.

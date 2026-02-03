@@ -1,0 +1,60 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce
+    username: postgres
+    password: your_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+kafka:
+  bootstrap-servers: localhost:9092
+
+redis:
+  host: localhost
+  port: 6379
+
+feign:
+  hystrix:
+    enabled: true
+
+circuitbreaker:
+  enabled: true
+
+saga:
+  order-service:
+    topic: order-events
+
+logging:
+  level:
+    com.example.orderservice: DEBUG
+
+elasticsearch:
+  rest:
+    uris: http://localhost:9200
+
+notification:
+  email:
+    from: no-reply@ecommerce.com
+    subject: Order Confirmation
+    smtp:
+      host: smtp.example.com
+      port: 587
+      username: your_email@example.com
+      password: your_email_password
+
+jwt:
+  secret: your_jwt_secret
+  expiration: 3600
+
+keycloak:
+  auth-server-url: http://localhost:8080/auth
+  realm: your_realm
+  resource: your_client_id
+  credentials:
+    secret: your_client_secret

@@ -1,0 +1,177 @@
+{
+  "realm": "ecommerce",
+  "enabled": true,
+  "clients": [
+    {
+      "clientId": "api-gateway",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "redirectUris": [
+        "http://localhost:8080/*"
+      ],
+      "webOrigins": [
+        "*"
+      ],
+      "publicClient": true,
+      "authorizationServicesEnabled": true
+    },
+    {
+      "clientId": "user-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "user-service-secret",
+      "redirectUris": [
+        "http://localhost:8081/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    },
+    {
+      "clientId": "auth-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "auth-service-secret",
+      "redirectUris": [
+        "http://localhost:8082/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    },
+    {
+      "clientId": "inventory-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "inventory-service-secret",
+      "redirectUris": [
+        "http://localhost:8083/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    },
+    {
+      "clientId": "product-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "product-service-secret",
+      "redirectUris": [
+        "http://localhost:8084/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    },
+    {
+      "clientId": "search-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "search-service-secret",
+      "redirectUris": [
+        "http://localhost:8085/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    },
+    {
+      "clientId": "cart-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "cart-service-secret",
+      "redirectUris": [
+        "http://localhost:8086/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    },
+    {
+      "clientId": "order-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "order-service-secret",
+      "redirectUris": [
+        "http://localhost:8087/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    },
+    {
+      "clientId": "notification-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "notification-service-secret",
+      "redirectUris": [
+        "http://localhost:8088/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    },
+    {
+      "clientId": "analytics-service",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "secret": "analytics-service-secret",
+      "redirectUris": [
+        "http://localhost:8089/*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "name": "USER",
+      "composite": false,
+      "clientRole": false,
+      "containerId": "ecommerce"
+    },
+    {
+      "name": "ADMIN",
+      "composite": false,
+      "clientRole": false,
+      "containerId": "ecommerce"
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "enabled": true,
+      "email": "admin@example.com",
+      "firstName": "Admin",
+      "lastName": "User",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "ADMIN"
+      ]
+    },
+    {
+      "username": "user",
+      "enabled": true,
+      "email": "user@example.com",
+      "firstName": "Regular",
+      "lastName": "User",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "user-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "USER"
+      ]
+    }
+  ]
+}

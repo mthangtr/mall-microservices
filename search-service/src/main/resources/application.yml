@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9200
+      cluster-name: elasticsearch
+
+elasticsearch:
+  rest:
+    uris: http://localhost:9200
+
+logging:
+  level:
+    org.springframework.data.elasticsearch: DEBUG
+
+# Additional configurations can be added as needed for search functionalities.
