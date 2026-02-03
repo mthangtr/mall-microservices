@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>User Service</name>
-    <description>Microservice for user management in the e-commerce application</description>
+    <description>Microservice for user management in the mall application</description>
 
     <properties>
         <java.version>17</java.version>

@@ -1,6 +1,6 @@
-# E-commerce Microservices Project
+# Mall Microservices Project
 
-This project is a comprehensive e-commerce platform built using a microservices architecture. It includes various services for user management, authentication, inventory management, product information, cart processing, order placement, and notifications. The project utilizes a range of technologies and frameworks to ensure scalability, security, and performance.
+This project is a comprehensive mall platform built using a microservices architecture. It includes various services for user management, authentication, inventory management, product information, cart processing, order placement, and notifications. The project utilizes a range of technologies and frameworks to ensure scalability, security, and performance.
 
 ## Tech Stack
 

@@ -1,8 +1,8 @@
-# E-Commerce Microservices Project Specification
+# Mall Microservices Project Specification
 
 ## Project Objectives
 
-The primary goal of this project is to build a practical, scalable e-commerce platform using Java microservices architecture. This serves as a learning exercise to implement real-world distributed systems patterns and technologies. The system aims to handle high-volume user interactions, ensure data consistency across services, and provide real-time analytics for business insights.
+The primary goal of this project is to build a practical, scalable mall platform using Java microservices architecture. This serves as a learning exercise to implement real-world distributed systems patterns and technologies. The system aims to handle high-volume user interactions, ensure data consistency across services, and provide real-time analytics for business insights.
 
 Key objectives include:
 - Demonstrate microservices best practices with service isolation, API Gateway, and circuit breakers.
@@ -13,7 +13,7 @@ Key objectives include:
 
 ## Features
 
-### Core E-Commerce Features
+### Core mall Features
 1. **User Management and Authentication**
    - User registration, login, and profile management.
    - Role-Based Access Control (RBAC) for different user types (admin, customer, etc.).
